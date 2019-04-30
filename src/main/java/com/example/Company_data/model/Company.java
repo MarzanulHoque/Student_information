@@ -10,16 +10,20 @@ public class Company {
 	public String name;
 	public String address;
 	public String phone_number;
+	public String department;
+	public String session;
 	
 	
 	public  Company() {}
 	
-	public Company( ObjectId _id, String name,String address, String phone_number)
+	public Company( ObjectId _id, String name,String address, String phone_number,String department,String session)
 	{
 		this._id = _id;
 		this.name = name;
 		this.address = address;
 		this.phone_number = phone_number;
+		this.department=department;
+		this.session=session;
 		
 	}
 
@@ -32,8 +36,13 @@ public class Company {
 	public String getName() {return address;}
 	public void setName(String address) {	this.address = address;}
 
+	public String getDepartment() {return department;}
+	public void setDepartment(String department) {this.department = department;}
+
 	public String getPhone_number() {return phone_number;}
 	public void setPhone_number(String phone_number) {this.phone_number = phone_number;}
-
+	
+	public String getSession() {return session;}
+	public void setSession(String session) {this.session = session;}
 
 }
